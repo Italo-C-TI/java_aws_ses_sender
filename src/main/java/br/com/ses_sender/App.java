@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-		SESService.sendMessage("Uma mensagem - " + LocalDate.now());
+		SESService.sendMessage("Uma mensagem enviada por italo em: " + LocalDate.now());
     }
 }

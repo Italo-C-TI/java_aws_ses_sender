@@ -47,7 +47,7 @@ public class SESService {
                 .region(region)
                 .build();
 
-        String bodyText = "Olá este é um email";
+        String bodyText = "Olá este é um email de italo";
 
         String bodyHTML = "<html>"
                 + "<head></head>"
@@ -58,11 +58,11 @@ public class SESService {
                 + "</html>";
 
         try {
-            send(client, "danilo.aparecido.santos@gmail.com", "danilo.aparecido.santos@gmail.com", "Email de teste",
+            send(client, "costa.italo.ti@gmail.com", "costa.italo.ti@gmail.com", "Email de teste",
                     bodyText, bodyHTML);
             client.close();
 
-            System.out.println("Email envido.");
+            System.out.println("Email enviado.");
 
         } catch (IOException | MessagingException e) {
             e.getStackTrace();
